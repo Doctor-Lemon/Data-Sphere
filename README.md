@@ -1,2 +1,2 @@
 # Nexus
-The School Nexus will be a portal for all of your school needs.  There will also be a hidden games site and a hidden unblocker.
+DataSphere is a project that I am starting that will have many recources for school, while also having an unblocker and games.  Those will be hidden, of course.
