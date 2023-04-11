@@ -34,6 +34,7 @@
         .logo {
     animation: slideToLeft 4s;
     animation-name: slideToLeft;
+    animation-fill-mode: forwards;
     }
 
     @keyframes slideToLeft {
@@ -41,7 +42,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-1000%);
     }
 }
 
