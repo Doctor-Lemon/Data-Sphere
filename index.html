@@ -30,13 +30,23 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .logo {
+            animation: all 4s;
+            animation-name: logo;
+        }
+
+        @keyframes logo {
+            0% {margin-left: auto; margin-right: auto;}
+            100% {left: 0; top: 0;}
+        }
     </style>
 </head>
 <body>
     <center>
     <header>
         <a href="index.html">
-            <img src="Media/logonew.gif" height="100" width="100" style="margin-left: auto; margin-right: auto;">
+            <img class="logo" src="Media/logonew.gif" height="100" width="100" style="margin-left: auto; margin-right: auto;">
             <h2>DataSphere</h2>
         </a>
     </header>
@@ -81,6 +91,6 @@
     
     </center>
 
-    <img src="Media/mathclass.jpg" height="250" width="500"> <img src="Media/ela.jpeg" height="250" width="500"
+    <img class="math" src="Media/mathclass.jpg" height="250" width="500"> <img class="ela" src="Media/ela.jpeg" height="250" width="500"
 </body>
 </html>
