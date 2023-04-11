@@ -50,7 +50,7 @@
           if (password == pass1) {
             create(); // Call create() function if password is correct
           } else {
-            window.location = "https://doctor-lemon.github.io/datasphere";
+           denied();
           }
         }
       
@@ -67,6 +67,11 @@
           iframe.style.margin = '0';
           iframe.src = url;
           win.document.body.appendChild(iframe);
+        }
+
+        function denied() {
+            window.alert('Access Denied by the Anonymous Association.  Please try again.')
+            window.location = "https://doctor-lemon.github.io/datasphere"
         }
       </script>
 
