@@ -32,14 +32,18 @@
         }
 
         .logo {
-            animation: margin-left 4s;
-            animation-name: logo;
-        }
+    animation: slideToLeft 4s;
+    animation-name: slideToLeft;
+    }
 
-        @keyframes logo {
-            0% {margin-left: auto; margin-right: auto;}
-            100% {margin-left: 0;}
-        }
+    @keyframes slideToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
         .container {
           position: relative;
