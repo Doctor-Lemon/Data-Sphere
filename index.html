@@ -40,6 +40,46 @@
             0% {margin-left: auto; margin-right: auto;}
             100% {margin-left: 0;}
         }
+
+        .container {
+          position: relative;
+         width: 50%;
+            }
+
+        .image {
+         display: block;
+         width: 100%;
+         height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
     </style>
 </head>
 <body>
@@ -96,7 +136,14 @@
     </center>
 
     <center>
-        <a href="calculator.html"><img class="math" src="Media/mathclass.jpg" height="250" width="500"></a> <img class="ela" src="Media/ela.jpeg" height="250" width="500">
+        <div class="container">
+            <img src="Media/mathclass.jpg" alt="Math" class="image">
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+          </div>
+          
+          <img class="ela" src="Media/ela.jpeg" height="250" width="500">
     </center>
 </body>
 </html>
