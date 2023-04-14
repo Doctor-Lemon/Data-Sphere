@@ -51,6 +51,14 @@
         h2 {
             animation: slideUp 1.5s;
             animation-name: slideUp;
+            animation-fill-mode: forwards;
+            animation-delay: 4s;
+        }
+
+        @keyframes slideUP {
+            0% {transform: translateY(0);}
+
+            100% {transform: translateY(50);}
         }
 
         .container {
