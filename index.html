@@ -35,6 +35,7 @@
         .logo {
     animation: slideToLeft 4s;
     animation-name: slideToLeft;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
     }
 
@@ -43,9 +44,14 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-600%);
+        transform: translateX(-200%);
     }
 }
+
+        h2 {
+            animation: slideUp 1.5s;
+            animation-name: slideUp;
+        }
 
         .container {
           position: relative;
