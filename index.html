@@ -43,9 +43,11 @@
     0% {
         transform: translateX(0);
     }
-    100% {
+    75% {
         transform: translateX(-175%);
     }
+
+    100% {transform: translateX(100px);}
 }
 
         h2 {
@@ -58,7 +60,9 @@
         @keyframes slideUp {
             0% {transform: translateY(0);}
 
-            100% {transform: translateY(-265%);}
+            75% {transform: translateY(-265%);}
+
+            100% {transform: translateX(100px);}
         }
 
         .container {
